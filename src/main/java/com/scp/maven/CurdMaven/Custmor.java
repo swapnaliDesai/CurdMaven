@@ -12,6 +12,7 @@ public class Custmor {
 	@Column(name="cist_id")
 	private int id;
 	private int age;
+	private int salary;
 	@Override
 	public String toString() {
 		return "\n Custmor [id=" + id + ", age=" + age + ", getClass()=" + getClass() + ", hashCode()=" + hashCode()
