@@ -41,6 +41,25 @@ class CustImpl implements CustService{
 		return true;
 	}
 
+
+public boolean saveCustmor(Custmor cid) {
+		try {
+			Session se=sf.openSession();
+			Transaction tr=se.beginTransaction();
+			se.save(cid);
+			
+			AppUtil.closeResourses(se, tr);
+		}
+		catch(Exception e) {
+		return false;
+		
+			
+		}
+		return true;
+	}
+
+
+
 	public boolean deletCustmor(Custmor cid) {
 		try{
 			
